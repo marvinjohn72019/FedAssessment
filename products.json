@@ -1,0 +1,28 @@
+[
+
+        {
+            "image": "images/product/ACER Nitro 5 AN515-44.jpg" ,
+            "title": "ACER Aspire 5 A514-53",
+            "brand": "acer",
+            "description": "Aspire 5 A514-53",
+            "price": "280"
+        },
+
+
+        {
+            "image": "images/product/ASUS Vivobook X407UBR.jpg",
+            "title": "ASUS Vivobook X407UBR",
+            "brand": "asus",
+            "description": "Vivobook X407UBR",
+            "price": "280"
+        },
+
+        {
+            "image": "images/product/AsusTuf Fx503VD Gaming.jpg",
+            "title": "ACER Nitro 5 AN515-44",
+            "brand": "acer",
+            "description": "Nitro 5 AN515-44",
+            "price": "280"
+        }
+
+]
