@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+
 
 </head>
 
@@ -64,7 +64,13 @@
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
             </div>
             <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
@@ -73,55 +79,103 @@
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
-            </div><div class="prod">
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prod">
                 <img src="images/product/ACER Aspire 5 A514-53.jpg" alt="img1">
                 <div class="des">
                     <span>Acer</span>
                     <h5>ACER Aspire 5 A514-53</h5>
                     <h4>2000</h4>
                 </div>
-            <button class="btn">Order</button>
+                <button id="myBtn">Order</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>some text in the Modal</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -137,39 +191,8 @@
             <p style="font-size: 12px;">© Copyright FED Basic Assessment.</p>
         </div>
     </footer>
-    <script>
-        // slideshow-container script
-        let slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
