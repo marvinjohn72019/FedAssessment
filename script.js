@@ -1,26 +1,51 @@
-fetch("products.json")
-.then(function(response){
-   return response.json();
-})
-.then(function(products){
-   let placeholder = document.querySelector("#data-output");
-   let out = "";
-   for(let product of products){
-      out +=` 
-      
-        <div class="product">
-               <img src="${item.image}" alt="${item.description}">
-               <p class="title">${item.title}</p>
-               <p class="description">${item.description}</p>
-               <p class="price">
-                  <span>${item.price}</span>
-                  <span>€</span>
-               </p>
-               <p class="cart">Add to cart <i class="bx bx-cart-alt"></i></p>
-            </div>
-         `;
-    }
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    placeholder.innerHTML = out;
-    
-  });
+function plusSlides(n) {
+   showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+   showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {
+      slideIndex = 1
+   }
+   if (n < 1) {
+      slideIndex = slides.length
+   }
+   for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex - 1].style.display = "block";
+   
+}
+
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+   modal.style.display = "block";
+}
+
+span.onclick = function () {
+   modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+   if (event.target == modal) {
+      modal.style.display = "none"
+   }
+}
