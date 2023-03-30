@@ -120,14 +120,15 @@ h1 {
 
 /* Products Flexbox */
 
-/* #proflex {
-  text-align: center;
-} */
-#proflex .flexcontainer{
+#proflex .flexcontainer {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
   flex-wrap: wrap;
+}
+
+#proflex .flexcontainer>div {
+  margin-top: 50px;
 }
 
 #proflex .prod {
@@ -138,8 +139,7 @@ h1 {
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-  margin: 100px 0px
-  transition 0.2s ease;
+  margin: 100px 0px transition 0.2s ease;
   position: relative;
 }
 
@@ -159,7 +159,7 @@ h1 {
 }
 
 #proflex .prod .des h5 {
-  padding-top: 7px ;
+  padding-top: 7px;
   color: #1a1a1a;
   font-size: 14px;
 }
@@ -168,10 +168,10 @@ h1 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color:red;
+  color: red;
 }
 
-#proflex .prod .btn {
+#myBtn {
   width: 100px;
   height: 40px;
   line-height: 40px;
@@ -179,8 +179,60 @@ h1 {
   background-color: rgb(62, 45, 252);
   font-weight: 500;
   color: white;
-  border: 1px solid #cce7d0 ;
+  border: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
-  right: 10px;  
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(246, 221, 221);
+  background-color: rgba(158, 158, 243, 0);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
 }
